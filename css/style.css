@@ -1,0 +1,68 @@
+body, html {
+    margin: 0;
+    height: 100%;
+}
+
+.menu {
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: #111;
+    height: 100%;
+    z-index: 1;
+    overflow-x: hidden;
+    width: 0;
+    text-align: center;
+
+
+    transition: 0.5s;
+}
+
+.menu a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.menu a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin: 0;
+    background-image: url('../img/bg.png');
+    background-size: cover;
+    height: 100%;
+
+    transition: margin-left .5s;
+}
+
+.hidden {
+    display: none;
+}
+
+.icon-menu {
+    width: 70px;
+    position: relative;
+    top: 10px;
+    left: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+.icon-menu i {
+    margin-right: 5px;
+}
+
+.fa-times {
+    position: absolute;
+    right: 5px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+}

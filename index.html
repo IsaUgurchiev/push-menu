@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Push Menu</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400;300' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='css/style.css' rel='stylesheet'>
+</head>
+<body>
+
+<div class="menu" id="menu-panel">
+    <span id="hide-menu"><i class="fa fa-times"></i></span>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+</div>
+
+
+<div class="main" id="main">
+    <div class="icon-menu">
+        <span id="show-menu"><i class="fa fa-bars"></i>Menu</span>
+    </div>
+</div>
+
+<script>
+    window.onload = function () {
+        var showMenuBtn = document.getElementById("show-menu"),
+            hideMenuBtn = document.getElementById("hide-menu"),
+            menuPanel = document.getElementById("menu-panel"),
+            main = document.getElementById("main"),
+            width = '250px';
+
+
+        showMenuBtn.onclick = function () {
+            menuPanel.style.width = width;
+            main.style.marginLeft = width;
+        };
+
+        hideMenuBtn.onclick = function () {
+            menuPanel.style.width = 0;
+            main.style.marginLeft = 0;
+        };
+    };
+</script>
+
+</body>
+</html>
