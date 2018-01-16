@@ -26,20 +26,23 @@
 <script>
     window.onload = function () {
         var showMenuBtn = document.getElementById("show-menu"),
-            hideMenuBtn = document.getElementById("hide-menu"),
-            menuPanel = document.getElementById("menu-panel"),
-            main = document.getElementById("main"),
-            width = '250px';
+                hideMenuBtn = document.getElementById("hide-menu"),
+                menuPanel = document.getElementById("menu-panel"),
+                main = document.getElementById("main"),
+                width = '250px',
+                opacity = '0.2';
 
 
         showMenuBtn.onclick = function () {
             menuPanel.style.width = width;
             main.style.marginLeft = width;
+            main.style.opacity = opacity;
         };
 
         hideMenuBtn.onclick = function () {
             menuPanel.style.width = 0;
             main.style.marginLeft = 0;
+            main.style.opacity = 1;
         };
     };
 </script>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Push Menu</title>
+    <title>Push Menu Full Width</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400;300' rel='stylesheet' type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='css/style.css' rel='stylesheet'>
@@ -26,20 +26,17 @@
 <script>
     window.onload = function () {
         var showMenuBtn = document.getElementById("show-menu"),
-            hideMenuBtn = document.getElementById("hide-menu"),
-            menuPanel = document.getElementById("menu-panel"),
-            main = document.getElementById("main"),
-            width = '250px';
+                hideMenuBtn = document.getElementById("hide-menu"),
+                menuPanel = document.getElementById("menu-panel"),
+                width = '100%';
 
 
         showMenuBtn.onclick = function () {
             menuPanel.style.width = width;
-            main.style.marginLeft = width;
         };
 
         hideMenuBtn.onclick = function () {
             menuPanel.style.width = 0;
-            main.style.marginLeft = 0;
         };
     };
 </script>
